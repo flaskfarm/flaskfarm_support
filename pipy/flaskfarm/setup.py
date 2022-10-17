@@ -1,11 +1,16 @@
+#f = open('/data/PIPY/flaskfarm/flaskfarm/lib/framework/version.py').read()
+import platform
+
 import setuptools
 
 #with open("README.md", "r") as fh:
 #    long_description = fh.read()
 
 
-#f = open('/data/PIPY/flaskfarm/flaskfarm/lib/framework/version.py').read()
-f = open('C:\\work\\FlaskFarm\\flaskfarm_support\\pipy\\flaskfarm\\flaskfarm\\lib\\framework\\version.py').read()
+if platform.system() == 'Windows':
+    f = open('C:\\work\\FlaskFarm\\flaskfarm_support\\pipy\\flaskfarm\\flaskfarm\\lib\\framework\\version.py').read()
+else:
+    f = open('/data/flaskfarm_support/pipy/flaskfarm/flaskfarm/lib/framework/version.py').read()
 
 version = f.split('=')[1].replace('"', '').strip()
 print(version)

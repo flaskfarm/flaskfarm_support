@@ -5,3 +5,5 @@ pipy/flaskfarm/flaskfarm/
 pipy/flaskfarm/.*/
 pipy/data*/
 docker/
+
+false/
