@@ -1,0 +1,7 @@
+pipy/flaskfarm/build/
+pipy/flaskfarm/dist/
+pipy/flaskfarm/FlaskFarm.egg-info/
+pipy/flaskfarm/flaskfarm/
+pipy/flaskfarm/.*/
+pipy/data*/
+docker/
