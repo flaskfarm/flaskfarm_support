@@ -128,6 +128,7 @@ install() {
     else
         cd $APP_HOME && git reset --hard HEAD && git pull
     fi
+    $PIP --no-cache-dir install --upgrade setuptools wheel
     $PIP install -r $APP_HOME/files/requirements_mini.txt
     $PIP install -r $APP_HOME/files/requirements_normal.txt
     $PIP install -r $APP_HOME/files/requirements_useful.txt
