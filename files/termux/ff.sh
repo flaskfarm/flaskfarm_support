@@ -4,7 +4,7 @@ DIR_DATA="/storage/emulated/0/Download/flaskfarm"
 CONFIGFILE=$DIR_DATA/config.yaml
 DIR_BIN="$PREFIX/bin"
 SCRIPT_TYPE="termux"
-SCRIPT_VERSION="1.2.6"
+SCRIPT_VERSION="1.2.7"
 SCRIPT_NAME="ff.sh"
 SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/termux/ff.sh"
 PS_COMMAND="ps -eo pid,args"
@@ -124,7 +124,6 @@ prepare() {
     pkg update -y
     pkg upgrade -y
     pkg install -y termux-services
-    exit
 }
 
 
