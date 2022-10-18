@@ -9,7 +9,7 @@ GIT="https://github.com/flaskfarm/flaskfarm.git"
 SCRIPT_TYPE="ubuntu"
 SCRIPT_VERSION="1.1.7"
 SCRIPT_NAME="flaskfarm.sh"
-SCRIPT_URL="https://flaskfarm.github.io/files/docker/flaskfarm.sh"
+SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/docker_dev/flaskfarm.sh"
 
 PYTHON="python"
 PIP="pip"
@@ -199,7 +199,7 @@ install_nginx() {
     sed -i "s/--daemonize/--daemonize -R/" /etc/init.d/php8.1-fpm
     sed -i "s/user = www-data/user = root/" /etc/php/8.1/fpm/pool.d/www.conf
     sed -i "s/group = www-data/group = root/" /etc/php/8.1/fpm/pool.d/www.conf
-    curl -Lo /etc/nginx/sites-available/default https://flaskfarm.github.io/files/docker/nginx_default
+    curl -Lo /etc/nginx/sites-available/default https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/docker_dev/nginx_default
     echo 'service php8.1-fpm restart' >> $APP_HOME/pre_start.sh
     echo 'service nginx restart' >> $APP_HOME/pre_start.sh
     if [ ! -d $DIR_DATA/html ]; then 
