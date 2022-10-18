@@ -6,7 +6,7 @@ DIR_BIN="$PREFIX/bin"
 SCRIPT_TYPE="termux"
 SCRIPT_VERSION="1.2.6"
 SCRIPT_NAME="ff.sh"
-SCRIPT_URL="https://flaskfarm.github.io/files/termux/ff.sh"
+SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/termux/ff.sh"
 PS_COMMAND="ps -eo pid,args"
  
  
@@ -66,7 +66,7 @@ install_rclone() {
 install_code_server() {
     pkg install -y proot-distro
     proot-distro install ubuntu
-    proot-distro login ubuntu -- wget https://flaskfarm.github.io/files/termux/code.sh
+    proot-distro login ubuntu -- wget https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/termux/ff.sh
     proot-distro login ubuntu -- sh code.sh
 
     config="$DIR_DATA/code-server/config.yaml"
@@ -159,7 +159,7 @@ start() {
     while true; 
     do
         pip install --upgrade FlaskFarm
-        python -m flaskfarm --repeat ${COUNT} --config ${CONFIGFILE}
+        python -m flaskfarm.main --repeat ${COUNT} --config ${CONFIGFILE}
         RESULT=$?
         echo "PYTHON EXIT CODE : ${RESULT}.............."
         if [ "$RESULT" = "1" ]; then
