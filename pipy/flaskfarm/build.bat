@@ -7,6 +7,8 @@ rmdir /s /q C:\work\FlaskFarm\flaskfarm_support\pipy\flaskfarm\FlaskFarm.egg-inf
 mkdir C:\work\FlaskFarm\flaskfarm_support\pipy\flaskfarm\flaskfarm
 XCOPY C:\work\FlaskFarm\flaskfarm C:\work\FlaskFarm\flaskfarm_support\pipy\flaskfarm\flaskfarm  /e /h /k
 
+del /q C:\work\FlaskFarm\flaskfarm_support\pipy\flaskfarm\flaskfarm\cli\*.log
+
 python setup.py sdist bdist_wheel
 python -m twine upload dist/*
 

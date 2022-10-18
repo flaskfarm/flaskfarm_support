@@ -5,7 +5,7 @@ CALL %ENV_HOME%\Scripts\activate
 SET COUNT=0
 :loop
     pip install --upgrade FlaskFarm
-    python -B -m flaskfarm --repeat %COUNT% --config %CONFIG%
+    python -B -m flaskfarm.main --repeat %COUNT% --config %CONFIG%
     ECHO PYTHON EXIT CODE : %errorlevel%..............
     if errorlevel == 1 (
         ECHO REPEAT....

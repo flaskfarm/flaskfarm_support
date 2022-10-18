@@ -41,7 +41,7 @@ setuptools.setup(
     packages = [
         'flaskfarm',
         'flaskfarm.files',
-        'flaskfarm.lib.cli',
+        'flaskfarm.cli',
         'flaskfarm.lib.framework',
         'flaskfarm.lib.framework.static.css',
         'flaskfarm.lib.framework.static.css.theme',
@@ -64,7 +64,7 @@ setuptools.setup(
 
     package_data={
         'flaskfarm.files':['*'],
-        'flaskfarm.lib.cli':['*'],
+        'flaskfarm.cli':['*'],
         'flaskfarm.lib.framework':['*'],
         'flaskfarm.lib.framework.static.css':['*'],
         'flaskfarm.lib.framework.static.css.theme':['*'],
