@@ -4,6 +4,7 @@ CONFIG=/data/flaskfarm_support/pipy/data_ubuntu/config.yaml
 source $ENV_PATH/bin/activate
 
 # redis execute
+# redis-server 
 COUNT=0
 while true;
 do
