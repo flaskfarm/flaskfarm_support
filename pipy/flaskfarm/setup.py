@@ -77,7 +77,7 @@ setuptools.setup(
         'flaskfarm.lib.support.base':['*'],
         'flaskfarm.lib.support.expand':['*'],
         'flaskfarm.lib.support.libsc':['*'],
-        'flaskfarm.lib.support.site':['*'],
+        'flaskfarm.lib.support.site':['tving.pyf', 'wavve.pyf'],
         'flaskfarm.lib.system':['*'],
         'flaskfarm.lib.system.templates':['*'],
         'flaskfarm.lib.tool':['*'],
