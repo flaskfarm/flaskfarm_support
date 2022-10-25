@@ -10,8 +10,6 @@ mkdir %HOME%\flaskfarm
 XCOPY C:\work\FlaskFarm\flaskfarm %HOME%\flaskfarm  /e /h /k
 
 del /q %HOME%\flaskfarm\cli\*.log
-python -m flaskfarm.cli.code_encode %HOME%\flaskfarm\lib\support\site\wavve.py
-python -m flaskfarm.cli.code_encode %HOME%\flaskfarm\lib\support\site\wavve.py
 del /q %HOME%\flaskfarm\lib\support\site\tving.py
 del /q %HOME%\flaskfarm\lib\support\site\tving.py
 python setup.py sdist bdist_wheel
