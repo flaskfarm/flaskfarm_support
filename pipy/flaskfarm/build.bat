@@ -11,7 +11,8 @@ XCOPY C:\work\FlaskFarm\flaskfarm %HOME%\flaskfarm  /e /h /k
 
 del /q %HOME%\flaskfarm\cli\*.log
 del /q %HOME%\flaskfarm\lib\support\site\tving.py
-del /q %HOME%\flaskfarm\lib\support\site\tving.py
+del /q %HOME%\flaskfarm\lib\support\site\wavve.py
+del /q %HOME%\flaskfarm\lib\support\site\seezn.py
 python setup.py sdist bdist_wheel
 python -m twine upload dist/*
 
