@@ -7,7 +7,7 @@ DIR_BIN="/usr/bin"
 GIT="https://github.com/flaskfarm/flaskfarm.git"
 
 SCRIPT_TYPE="ubuntu"
-SCRIPT_VERSION="1.2.1"
+SCRIPT_VERSION="1.2.0"
 SCRIPT_NAME="flaskfarm.sh"
 SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/docker_dev/flaskfarm.sh"
 
@@ -410,7 +410,6 @@ EOF
         service redis-server stop
     fi
     if [ -e /etc/init.d/flaskfarm_celery ]; then
-        $PS_COMMAND | grep main.celery | grep -v grep | awk '{print $1}' | xargs -r kill -9
         service flaskfarm_celery stop
     fi
     if [ "$DOCKER_NONSTOP" == "true" ]; then

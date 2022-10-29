@@ -4,6 +4,5 @@ pipy/flaskfarm/FlaskFarm.egg-info/
 pipy/flaskfarm/flaskfarm/
 pipy/flaskfarm/.*/
 pipy/data*/
-docker/
-
+docker/alpine/
 false/
