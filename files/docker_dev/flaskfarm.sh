@@ -7,7 +7,7 @@ DIR_BIN="/usr/bin"
 GIT="https://github.com/flaskfarm/flaskfarm.git"
 
 SCRIPT_TYPE="ubuntu"
-SCRIPT_VERSION="1.1.7"
+SCRIPT_VERSION="1.2.0"
 SCRIPT_NAME="flaskfarm.sh"
 SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/docker_dev/flaskfarm.sh"
 
@@ -427,7 +427,7 @@ foreground_start() {
     if [ -e /etc/init.d/redis-server ]; then
         service redis-server restart
     fi
-    export UPDATE_STOP="true"
+    #export UPDATE_STOP="true"
     COUNT=0
     while true;
     do
@@ -442,7 +442,7 @@ foreground_start() {
                 echo "PLUGIN_UPDATE_FROM_SCRIPT"
                 plugin_update
             else
-                ehco "PLUGIN_UPDATE_FROM_PYTHON"
+                echo "PLUGIN_UPDATE_FROM_PYTHON"
             fi
         fi
  
