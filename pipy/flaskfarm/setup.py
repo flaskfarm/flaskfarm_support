@@ -90,7 +90,7 @@ setuptools.setup(
         "Flask-SQLAlchemy",
         "Flask-Login",
         "Flask-Cors",
-        "Flask-Markdown",
+        #"Flask-Markdown",
         "Flask-SocketIO",
         "python-engineio",
         "python-socketio",
@@ -112,6 +112,6 @@ setuptools.setup(
         "pycryptodome",
         #"celery",
         #"redis",
-        
+        "json_fix",
     ],
 )
