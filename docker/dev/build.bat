@@ -10,4 +10,4 @@ REM docker buildx build --no-cache --platform linux/amd64,linux/arm64,linux/arm/
 
 cd C:\work\FlaskFarm\flaskfarm_support\docker\dev
 copy /e /h /k C:\work\FlaskFarm\flaskfarm_support\files\docker_dev\flaskfarm.sh C:\work\FlaskFarm\flaskfarm_support\docker\dev
-docker buildx build --no-cache --progress plain --platform linux/amd64,linux/arm64 -t flaskfarm/flaskfarm:4.0-dev --push .
+docker buildx build --no-cache --progress plain --platform linux/amd64,linux/arm64 -t flaskfarm/flaskfarm:4.0.1-dev --push .
