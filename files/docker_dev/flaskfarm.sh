@@ -375,7 +375,7 @@ start() {
                 echo "PLUGIN_UPDATE_FROM_SCRIPT"
                 plugin_update
             else
-                ehco "PLUGIN_UPDATE_FROM_PYTHON"
+                echo "PLUGIN_UPDATE_FROM_PYTHON"
             fi
         fi
 
