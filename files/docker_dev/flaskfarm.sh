@@ -7,7 +7,7 @@ DIR_BIN="/usr/bin"
 GIT="https://github.com/flaskfarm/flaskfarm.git"
 
 SCRIPT_TYPE="ubuntu"
-SCRIPT_VERSION="1.2.1"
+SCRIPT_VERSION="1.2.4"
 SCRIPT_NAME="flaskfarm.sh"
 SCRIPT_URL="https://raw.githubusercontent.com/flaskfarm/flaskfarm_support/main/files/docker_dev/flaskfarm.sh"
 
