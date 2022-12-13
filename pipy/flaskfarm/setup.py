@@ -57,8 +57,6 @@ setuptools.setup(
         'flaskfarm.lib.system',
         'flaskfarm.lib.system.templates',
         'flaskfarm.lib.tool',
-        'flaskfarm.lib.tool_base',
-        'flaskfarm.lib.tool_expand',
     ],
 
     package_data={
@@ -79,8 +77,6 @@ setuptools.setup(
         'flaskfarm.lib.system':['*'],
         'flaskfarm.lib.system.templates':['*'],
         'flaskfarm.lib.tool':['*'],
-        'flaskfarm.lib.tool_base':['*'],
-        'flaskfarm.lib.tool_expand':['*'],
     },
 
     install_requires=[
