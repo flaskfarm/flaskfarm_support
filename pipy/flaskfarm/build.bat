@@ -15,6 +15,7 @@ del /q %HOME%\flaskfarm\lib\support\site\wavve.py
 del /q %HOME%\flaskfarm\lib\support\site\seezn.py
 del /q %HOME%\flaskfarm\lib\support\site\kakaotv.py
 del /q %HOME%\flaskfarm\lib\support\site\cppl.py
+del /q %HOME%\flaskfarm\lib\support\site\dl_watcha.py
 python setup.py sdist bdist_wheel
 python -m twine upload dist/*
 
