@@ -56,6 +56,7 @@ setuptools.setup(
         'flaskfarm.lib.support.libsc',
         'flaskfarm.lib.system',
         'flaskfarm.lib.system.templates',
+        'flaskfarm.lib.system.files',
         'flaskfarm.lib.tool',
     ],
 
@@ -76,6 +77,7 @@ setuptools.setup(
         'flaskfarm.lib.support.libsc':['*'],
         'flaskfarm.lib.system':['*'],
         'flaskfarm.lib.system.templates':['*'],
+        'flaskfarm.lib.system.files':['*'],
         'flaskfarm.lib.tool':['*'],
     },
 

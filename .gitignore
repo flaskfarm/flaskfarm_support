@@ -3,6 +3,7 @@ pipy/flaskfarm/dist/
 pipy/flaskfarm/FlaskFarm.egg-info/
 pipy/flaskfarm/flaskfarm/
 pipy/flaskfarm/.*/
+pipy/flaskfarm/pipy_token.txt
 pipy/data*/
 docker/alpine/
 false/ 
